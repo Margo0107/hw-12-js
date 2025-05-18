@@ -2,7 +2,7 @@ body {
   background-color: rgb(34, 34, 33);
 }
 .first-btn-link {
-    margin: 50px 50px;
+  margin: 50px 50px;
   box-sizing: border-box;
   position: relative;
   display: inline-block;
@@ -42,49 +42,92 @@ body {
 }
 .first-btn-link:hover:before {
   filter: blur(20px);
-  opacity: 1  /* animation: animate 8s linear infinite; */
+  opacity: 1; /* animation: animate 8s linear infinite; */
 }
 
+.two-btn-link {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  background-color: rgb(45, 130, 248);
+  border: rgb(45, 130, 248);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  padding: 0 20px;
+}
+.two-btn-link:hover {
+  animation: animate 8s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+.two-btn-link::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  background: rgb(94, 198, 243);
+  z-index: -1;
+  transition: 0.5s;
+  background-size: 400%;
+  opacity: 0;
+}
+.two-btn-link:hover:before {
+  filter: blur(20px);
+  opacity: 1; /* animation: animate 8s linear infinite; */
+}
 
-  .two-btn-link {
-    box-sizing: border-box;
-    position: relative;
-    display: inline-block;
-    color: #fff;
-    background-color: rgb(45, 130, 248);
-    border: rgb(45, 130, 248);
-    border-radius: 10px;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 600;
-    height: 40px;
-    padding: 0 20px;
+.btn {
+  margin: 10px 35px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  background-color: rgb(155, 68, 227);
+  border: rgb(155, 68, 227);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  padding: 0 20px;
+}
+.btn:hover {
+  animation: animate 8s linear infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0%;
   }
-  .two-btn-link:hover {
-    animation: animate 8s linear infinite;
+  100% {
+    background-position: 400%;
   }
-  @keyframes animate {
-    0% {
-      background-position: 0%;
-    }
-    100% {
-      background-position: 400%;
-    }
-  }
-  .two-btn-link::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    bottom: -5px;
-    left: -5px;
-    background: rgb(94, 198, 243);
-    z-index: -1;
-    transition: 0.5s;
-    background-size: 400%;
-    opacity: 0;
-  }
-  .two-btn-link:hover:before {
-    filter: blur(20px);
-    opacity: 1  /* animation: animate 8s linear infinite; */
-  }
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  background: rgb(211, 101, 245);
+  z-index: -1;
+  transition: 0.5s;
+  background-size: 400%;
+  opacity: 0;
+}
+.btn:hover:before {
+  filter: blur(20px);
+  opacity: 1; /* animation: animate 8s linear infinite; */
+}
